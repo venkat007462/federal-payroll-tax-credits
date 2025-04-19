@@ -1,222 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Federal Payroll Tax Credits</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f8f9fb;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #003366, #0055a5);
-      color: white;
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
-    header h1 {
-      font-size: 36px;
-      margin: 0 0 10px;
-    }
-    header p {
-      font-size: 18px;
-      margin: 0;
-    }
-
-    .form-inline {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      background: #eef2f7;
-      padding: 20px;
-    }
-
-    .form-inline iframe {
-      width: 100%;
-      max-width: 600px;
-      height: 500px;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      background: white;
-    }
-
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 20px;
-      background: #ffffff;
-    }
-    .stat {
-      flex: 1 1 200px;
-      margin: 10px;
-      padding: 20px;
-      background: #f1f3f6;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    }
-    .stat h2 {
-      font-size: 30px;
-      color: #007bff;
-      margin: 0;
-    }
-    .stat p {
-      margin: 8px 0 0;
-    }
-
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      background: #ffffff;
-      padding: 30px 10px;
-    }
-
-    .feature {
-      flex: 1 1 280px;
-      margin: 10px;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .feature img {
-      width: 50px;
-      margin-bottom: 15px;
-    }
-
-    .feature h3 {
-      margin-bottom: 10px;
-      color: #003366;
-    }
-
-    .advisor-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 30px 10px;
-      background: #f8f9fb;
-    }
-
-    .advisor-section img {
-      width: 240px;
-      border-radius: 12px;
-      margin-right: 20px;
-    }
-
-    .advisor-text {
-      max-width: 500px;
-    }
-
-    .media-section {
-      background: #ffffff;
-      padding: 30px 15px;
-      text-align: center;
-    }
-
-    .media-section iframe {
-      width: 90%;
-      max-width: 700px;
-      height: 400px;
-      border: none;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-
-    .media-section a {
-      color: #0055a5;
-      text-decoration: underline;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #003366;
-      color: white;
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      .advisor-section {
-        flex-direction: column;
-      }
-      .advisor-section img {
-        margin-right: 0;
-        margin-bottom: 15px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Your Federal Payroll Tax Refund</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 300px;
+            border-radius: 50%;
+        }
+        .lead-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .lead-form input[type="text"], .lead-form input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .lead-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .lead-form button:hover {
+            background-color: #0056b3;
+        }
+        .content-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .content-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Unlock Up to 30% in Annual Payroll Tax Credits</h1>
-    <p>Govt-backed savings program. No changes to payroll. W-2 staff only.</p>
-  </header>
+<header>
+    <h1>🚀 Claim Your Federal Payroll Tax Refund - Up to $500,000/Year!</h1>
+</header>
 
-  <section class="form-inline">
-    <iframe src="https://tally.so/r/3y7Lp0?transparentBackground=1" title="Qualification Form"></iframe>
-  </section>
+<section>
+    <h2>HVAC Business Owners, don’t leave money on the table.</h2>
+    <p>You could qualify for federal payroll tax refunds that could total up to $500,000 per year. This isn’t a loan or deferral – it’s real cash back, just for claiming the credits for your existing team.</p>
 
-  <section class="stats">
-    <div class="stat">
-      <h2>$250K+</h2>
-      <p>Avg Yearly Savings</p>
-    </div>
-    <div class="stat">
-      <h2>30%</h2>
-      <p>Payroll Tax Reduction</p>
-    </div>
-    <div class="stat">
-      <h2>100%</h2>
-      <p>IRS Compliant</p>
-    </div>
-  </section>
+    <a href="https://tally.so/r/3y7Lp0" class="cta-button">📞 Claim Now!</a>
 
-  <section class="features">
-    <div class="feature">
-      <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-guarantee-ecommerce-flatart-icons-outline-flatarticons.png"/>
-      <h3>Govt Authorized</h3>
-      <p>Completely legal & approved by federal programs.</p>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-glyphs/60/time.png"/>
-      <h3>Quick Setup</h3>
-      <p>5-minute application. No paperwork headaches.</p>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/ios/50/000000/money-bag.png"/>
-      <h3>No Upfront Fee</h3>
-      <p>Only pay when your credits are secured.</p>
-    </div>
-  </section>
+    <h3>Why You Can’t Miss This</h3>
+    <ul>
+        <li>No upfront costs – Refunds are based on your existing payroll.</li>
+        <li>Big savings – Up to $500,000/year depending on the size of your team.</li>
+        <li>Simple process – No changes to your payroll system or business structure.</li>
+        <li>Act fast – If you don’t claim now, you could lose this money forever.</li>
+    </ul>
 
-  <section class="advisor-section">
-    <img src="https://github.com/venkat007462/federal-payroll-tax-credits/blob/main/Stefan-Levy.jpg?raw=true" alt="Stefan Levy">
-    <div class="advisor-text">
-      <h2>Meet Stefan Levy</h2>
-      <p>Stefan is your personal Program Advisor guiding employers through the Project Blue wellness credit. With over 20 years of experience, he ensures you get the max benefit — without disrupting your systems or payroll.</p>
+    <h3>Why It Matters to Your HVAC Business</h3>
+    <p>The federal payroll tax credit program is a missed opportunity for many HVAC companies. But you can benefit from it. All you need to do is claim the credit, and we’ll walk you through it.</p>
+    <p>By completing the form below, you’re taking the first step towards securing hundreds of thousands of dollars in tax refunds that could directly help your business.</p>
+
+    <a href="https://tally.so/r/3y7Lp0" class="cta-button">📞 Claim Your Refund Now!</a>
+</section>
+
+<section>
+    <h3>📞 Meet Stefan Levy, Your Point of Contact</h3>
+    <div class="image-container">
+        <img src="https://github.com/venkat007462/federal-payroll-tax-credits/blob/main/Stefan-Levy.jpg?raw=true" alt="Stefan Levy">
     </div>
-  </section>
+    <p>Stefan Levy<br>
+    Chief Connections Officer, Reach Partners Group<br>
+    📞 (310) 254-7592<br>
+    📧 <a href="mailto:stefan@reachpartnersgroup.com">stefan@reachpartnersgroup.com</a><br>
+    🔗 <a href="https://www.linkedin.com/in/stefanlevy" class="content-link">LinkedIn Profile</a></p>
 
-  <section class="media-section">
-    <h2>Watch & Learn</h2>
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="Payroll Tax Credit Overview"></iframe>
-    <p><a href="https://www.irs.gov/newsroom" target="_blank">Read IRS Guidance on Payroll Tax Credits</a></p>
-  </section>
+    <p>Stefan will personally help guide you through the process and make sure you get the credit you deserve. Don’t miss this opportunity to claim your refund!</p>
+</section>
 
-  <footer>
-    &copy; 2025 Federal Payroll Tax Credits | Project Blue | All rights reserved.
-  </footer>
+<section>
+    <h3>✅ Why Wait? Claim Now!</h3>
+    <p>You could be leaving up to $500,000 in federal payroll tax refunds on the table. Don’t wait! The time to act is now. Fill out the form, and one of our experts will call you back to discuss how much your business could get.</p>
+    <a href="https://tally.so/r/3y7Lp0" class="cta-button">📞 Final Call: Request your estimate Now!</a>
+</section>
+
+<section class="lead-form">
+    <h3>📞 Get Started with Your Claim</h3>
+    <form action="https://tally.so/r/3y7Lp0" method="GET">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <button type="submit">Claim Your Refund Now</button>
+    </form>
+</section>
+
+<section>
+    <h3>💡 Learn More</h3>
+    <p>Read the full article on the federal payroll tax credit program and how HVAC businesses can benefit. Check out the links below:</p>
+    <ul>
+        <li><a href="https://example.com/article1" class="content-link">How the Federal Payroll Tax Credit Works</a></li>
+        <li><a href="https://example.com/article2" class="content-link">5 Ways HVAC Businesses Can Maximize Their Refunds</a></li>
+    </ul>
+    <p>Watch this short video to learn more:</p>
+    <a href="https://example.com/video" class="content-link">Watch Video</a>
+</section>
 
 </body>
 </html>
