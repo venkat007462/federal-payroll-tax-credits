@@ -1,25 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Standout Containers</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="section">
-            <h2>Section 1</h2>
-            <p>This is a sample content in section 1.</p>
-        </div>
-        <div class="section">
-            <h2>Section 2</h2>
-            <p>This is a sample content in section 2.</p>
-        </div>
-        <div class="section">
-            <h2>Section 3</h2>
-            <p>This is a sample content in section 3.</p>
-        </div>
-    </div>
-</body>
-</html>
+/* Body styling */
+body {
+    background-color: #f0f0f0; /* Light background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for all sections */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Section styling */
+.section {
+    background-color: #ffffff; /* White background for containers */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around each container */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between sections */
+    padding: 20px;
+    width: 80%; /* Container width */
+    max-width: 600px; /* Max width to avoid stretching */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Section title */
+.section h2 {
+    color: #333; /* Dark text for headings */
+    margin-bottom: 10px;
+}
+
+/* Section text */
+.section p {
+    color: #666; /* Lighter text for content */
+}
+
+/* Hover effect to make the section stand out more */
+.section:hover {
+    background-color: #f7f7f7; /* Slightly darker background on hover */
+    transform: translateY(-5px); /* Lift the section up a bit */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
