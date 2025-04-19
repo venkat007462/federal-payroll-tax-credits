@@ -1,217 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Federal Payroll Tax Credits - Builder</title>
-  <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Federal Payroll Tax Credits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body, html {
-      height: 100%;
-      margin: 0;
+    body {
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f8f9fb;
+      color: #333;
     }
-    #gjs {
-      height: 100vh;
-    }
-    .section {
-      padding: 40px 20px;
-    }
-    .hero {
-      background: #f7f9fc;
+    header {
+      background: linear-gradient(135deg, #003366, #0055a5);
+      color: white;
       text-align: center;
       padding: 60px 20px;
     }
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-      color: #003366;
+    header h1 {
+      font-size: 38px;
+      margin: 0;
     }
-    .hero p {
+    header p {
       font-size: 18px;
-      color: #333;
+      margin-top: 15px;
     }
     .stats {
       display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin: 30px 0;
+      justify-content: space-around;
       flex-wrap: wrap;
-    }
-    .stat-box {
       background: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 200px;
+      padding: 30px 20px;
+      text-align: center;
     }
-    .stat-box h2 {
+    .stat {
+      flex: 1 1 200px;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      background: #f1f3f6;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .stat h2 {
       font-size: 32px;
       color: #007bff;
       margin-bottom: 10px;
     }
-    .stat-box p {
-      font-size: 14px;
-      color: #444;
-    }
-    .section-columns {
+    .info-section {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding: 40px 20px;
+      background: #ffffff;
     }
-    .column {
-      flex: 1;
-      min-width: 250px;
+    .info-block {
+      flex: 1 1 300px;
+      text-align: center;
+      margin: 10px;
+    }
+    .info-block img {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .info-block h3 {
+      color: #003366;
+      margin-bottom: 10px;
     }
     .form-section {
       display: flex;
-      align-items: center;
-      justify-content: space-around;
-      padding: 40px 20px;
-      background: #eef2f5;
       flex-wrap: wrap;
+      background: #eef2f7;
+      padding: 40px 20px;
+      justify-content: center;
+      align-items: flex-start;
     }
-    .form-container {
-      max-width: 500px;
+    .form-box {
       background: white;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      flex: 1 1 500px;
+      margin: 10px;
     }
-    iframe {
+    .form-box iframe {
       width: 100%;
       height: 600px;
       border: none;
     }
-    .stefan-img {
-      max-width: 250px;
-      border-radius: 12px;
-    }
-    .icon-box {
+    .advisor-box {
+      max-width: 300px;
       text-align: center;
-      padding: 20px;
+      margin: 10px;
     }
-    .icon-box img {
-      width: 60px;
+    .advisor-box img {
+      width: 100%;
+      border-radius: 12px;
       margin-bottom: 10px;
     }
-    .icon-box h3 {
-      color: #0056b3;
-      font-size: 18px;
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #003366;
+      color: white;
     }
   </style>
 </head>
 <body>
 
-<div id="gjs">
+  <header>
+    <h1>Unlock Up to 30% in Annual Payroll Tax Credits</h1>
+    <p>No changes to your existing payroll system. Government-backed savings program for employers with W-2 staff.</p>
+  </header>
 
-  <section class="hero">
-    <h1>Unlock Up to 30% In Annual Payroll Tax Credits</h1>
-    <p>Government-backed savings for businesses with W-2 employees — no changes to your payroll system.</p>
-    <div class="stats">
-      <div class="stat-box">
-        <h2>$250K+</h2>
-        <p>Saved per business on average</p>
-      </div>
-      <div class="stat-box">
-        <h2>30%</h2>
-        <p>Annual payroll tax reduction</p>
-      </div>
-      <div class="stat-box">
-        <h2>100%</h2>
-        <p>Compliance with IRS guidelines</p>
-      </div>
+  <section class="stats">
+    <div class="stat">
+      <h2>$250K+</h2>
+      <p>Average Annual Savings</p>
+    </div>
+    <div class="stat">
+      <h2>30%</h2>
+      <p>Payroll Tax Reduction</p>
+    </div>
+    <div class="stat">
+      <h2>100%</h2>
+      <p>IRS Compliant</p>
     </div>
   </section>
 
-  <section class="section section-columns">
-    <div class="column icon-box">
+  <section class="info-section">
+    <div class="info-block">
       <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-guarantee-ecommerce-flatart-icons-outline-flatarticons.png"/>
       <h3>Government-Approved</h3>
-      <p>Secure and verified tax credit program authorized by U.S. law.</p>
+      <p>Authorized and fully compliant with federal regulations.</p>
     </div>
-    <div class="column icon-box">
-      <img src="https://img.icons8.com/ios-filled/50/0aa/clock.png"/>
-      <h3>Fast Qualification</h3>
-      <p>Get pre-qualified in under 5 minutes with no obligations.</p>
+    <div class="info-block">
+      <img src="https://img.icons8.com/ios-filled/50/000000/clock--v1.png"/>
+      <h3>Fast Processing</h3>
+      <p>Complete your qualification in under 5 minutes.</p>
     </div>
-    <div class="column icon-box">
-      <img src="https://img.icons8.com/ios/50/4caf50/money-bag.png"/>
-      <h3>No Upfront Costs</h3>
-      <p>Only pay if your business qualifies and receives credits.</p>
+    <div class="info-block">
+      <img src="https://img.icons8.com/ios/50/000000/money-bag.png"/>
+      <h3>No Upfront Fees</h3>
+      <p>Pay only when you qualify and receive your credit.</p>
     </div>
   </section>
 
   <section class="form-section">
-    <div class="form-container">
-      <h2 style="margin-bottom: 20px;">Check Your Eligibility Now</h2>
-      <iframe src="https://tally.so/r/mDGEkE?transparentBackground=1" title="Eligibility Form"></iframe>
+    <div class="form-box">
+      <h2 style="text-align:center; margin-bottom:20px;">Check Eligibility Now</h2>
+      <iframe src="https://tally.so/r/mDGEkE?transparentBackground=1"></iframe>
     </div>
-    <div>
-      <img src="https://venkat007462.github.io/federal-payroll-tax-credits/images/stefan.png" alt="Stefan" class="stefan-img"/>
-      <p style="max-width: 250px; margin-top: 10px; font-size: 14px; color: #555;">Stefan – Program Advisor, helping employers unlock tax savings through wellness-based credits.</p>
+    <div class="advisor-box">
+      <img src="https://venkat007462.github.io/federal-payroll-tax-credits/images/stefan.png" alt="Stefan">
+      <p><strong>Stefan – Program Advisor</strong><br>Helping businesses save through wellness-based payroll tax credits.</p>
     </div>
   </section>
 
-</div>
-
-<script src="https://unpkg.com/grapesjs"></script>
-<script>
-  const editor = grapesjs.init({
-    container: '#gjs',
-    fromElement: true,
-    height: '100vh',
-    width: 'auto',
-    storageManager: false,
-    panels: {
-      defaults: [
-        {
-          id: 'panel-devices',
-          buttons: [
-            {
-              id: 'device-desktop',
-              label: 'Desktop',
-              command: 'set-device-desktop',
-              active: true,
-              togglable: false,
-            },
-            {
-              id: 'device-mobile',
-              label: 'Mobile',
-              command: 'set-device-mobile',
-              togglable: false,
-            }
-          ],
-        },
-        {
-          id: 'panel-commands',
-          buttons: [
-            {
-              id: 'export',
-              className: 'btn-export',
-              label: 'Export',
-              command: 'export-template',
-            }
-          ]
-        }
-      ]
-    },
-    deviceManager: {
-      devices: [
-        { name: 'Desktop', width: '' },
-        { name: 'Mobile', width: '375px' }
-      ]
-    }
-  });
-
-  editor.Commands.add('set-device-desktop', {
-    run: editor => editor.setDevice('Desktop')
-  });
-
-  editor.Commands.add('set-device-mobile', {
-    run: editor => editor.setDevice('Mobile')
-  });
-</script>
+  <footer>
+    &copy; 2025 Federal Payroll Tax Credits | Powered by Project Blue
+  </footer>
 
 </body>
 </html>
