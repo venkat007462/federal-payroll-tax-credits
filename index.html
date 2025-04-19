@@ -1,98 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Federal Payroll Tax Credits for HVAC Businesses</title>
+  <meta charset="UTF-8">
+  <title>Federal Payroll Tax Credits - Builder</title>
+  <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    body, html {
+      height: 100%;
       margin: 0;
-      padding: 0;
-      background-color: #f2f4f8;
-      color: #222;
+      font-family: 'Segoe UI', sans-serif;
     }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 16px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.07);
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-    .tally-form {
-      margin: 20px 0;
-      text-align: center;
-    }
-    iframe {
-      width: 100%;
-      height: 340px;
-      border: none;
-      border-radius: 10px;
+    #gjs {
+      height: 100vh;
     }
     .section {
-      margin-top: 30px;
+      padding: 40px 20px;
     }
-    .grid {
+    .hero {
+      background: #f7f9fc;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #333;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .stat-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 200px;
+    }
+    .stat-box h2 {
+      font-size: 32px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+    .stat-box p {
+      font-size: 14px;
+      color: #444;
+    }
+    .section-columns {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 20px;
+      justify-content: space-around;
     }
-    .col {
+    .column {
       flex: 1;
       min-width: 250px;
     }
-    .highlight {
-      font-weight: bold;
-      color: #2563eb;
+    .form-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: #eef2f5;
+      flex-wrap: wrap;
     }
-    .footer {
+    .form-container {
+      max-width: 500px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .stefan-img {
+      max-width: 250px;
+      border-radius: 12px;
+    }
+    .icon-box {
       text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 40px;
+      padding: 20px;
+    }
+    .icon-box img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    .icon-box h3 {
+      color: #0056b3;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Claim Up to <span class="highlight">$500,000/year</span> in Hidden Payroll Tax Credits</h1>
-    <p>Many HVAC business owners are unknowingly overpaying taxes. If you employ 5+ W-2 staff, you may qualify for significant federal payroll tax refunds — without changing your accountant, payroll provider, or employee benefits.</p>
-    <p><strong>This is not a loan. This is not a deferral.</strong> These are real credits — cash back for doing what you're already doing.</p>
-    <p><strong>Don't leave this money on the table.</strong> If not claimed this year, it’s gone forever.</p>
 
-    <div class="tally-form">
-      <iframe src="https://tally.so/r/3y7Lp0" title="Estimate Form"></iframe>
-    </div>
+<div id="gjs">
 
-    <div class="section grid">
-      <div class="col">
-        <h2>Quick Resources</h2>
-        <p>▶️ <a href="https://youtu.be/nN-Us-Q4SuQ" target="_blank">20-Minute Program Overview</a></p>
-        <p>▶️ <a href="https://youtu.be/LhvplKxAWRI" target="_blank">6-Minute Quick Walkthrough</a></p>
-        <p>📄 <a href="https://www.cpajournal.com/2021/01/27/20-questions-about-the-establishing-a-health-wellness-program-in-the-workplace/" target="_blank">CPA Journal Article</a></p>
-        <p>📄 <a href="https://www.law.cornell.edu/cfr/text/26/1.105-11" target="_blank">Cornell Law Reference</a></p>
+  <section class="hero">
+    <h1>Unlock Up to 30% In Annual Payroll Tax Credits</h1>
+    <p>Government-backed savings for businesses with W-2 employees — no changes to your payroll system.</p>
+    <div class="stats">
+      <div class="stat-box">
+        <h2>$250K+</h2>
+        <p>Saved per business on average</p>
       </div>
-
-      <div class="col">
-        <h2>Meet Stefan Levy</h2>
-        <img src="stefan.jpg" alt="Stefan Levy" style="width:100%; max-width:180px; border-radius:12px;" />
-        <p><strong>Stefan Levy</strong><br>
-        Chief Connections Officer<br>
-        Reach Partners Group</p>
-        <p>📞 <strong>(310) 254-7592</strong><br>
-        📧 <a href="mailto:stefan@reachpartnersgroup.com">stefan@reachpartnersgroup.com</a><br>
-        🔗 <a href="https://www.linkedin.com/in/stefanlevy/" target="_blank">LinkedIn Profile</a></p>
+      <div class="stat-box">
+        <h2>30%</h2>
+        <p>Annual payroll tax reduction</p>
+      </div>
+      <div class="stat-box">
+        <h2>100%</h2>
+        <p>Compliance with IRS guidelines</p>
       </div>
     </div>
+  </section>
 
-    <div class="footer">
-      <p>We respect your privacy. Your information will only be used to assess program eligibility.</p>
+  <section class="section section-columns">
+    <div class="column icon-box">
+      <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-guarantee-ecommerce-flatart-icons-outline-flatarticons.png"/>
+      <h3>Government-Approved</h3>
+      <p>Secure and verified tax credit program authorized by U.S. law.</p>
     </div>
-  </div>
+    <div class="column icon-box">
+      <img src="https://img.icons8.com/ios-filled/50/0aa/clock.png"/>
+      <h3>Fast Qualification</h3>
+      <p>Get pre-qualified in under 5 minutes with no obligations.</p>
+    </div>
+    <div class="column icon-box">
+      <img src="https://img.icons8.com/ios/50/4caf50/money-bag.png"/>
+      <h3>No Upfront Costs</h3>
+      <p>Only pay if your business qualifies and receives credits.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="form-container">
+      <h2 style="margin-bottom: 20px;">Check Your Eligibility Now</h2>
+      <iframe src="https://tally.so/r/mDGEkE?transparentBackground=1" title="Eligibility Form"></iframe>
+    </div>
+    <div>
+      <img src="https://venkat007462.github.io/federal-payroll-tax-credits/images/stefan.png" alt="Stefan" class="stefan-img"/>
+      <p style="max-width: 250px; margin-top: 10px; font-size: 14px; color: #555;">Stefan – Program Advisor, helping employers unlock tax savings through wellness-based credits.</p>
+    </div>
+  </section>
+
+</div>
+
+<script src="https://unpkg.com/grapesjs"></script>
+<script>
+  const editor = grapesjs.init({
+    container: '#gjs',
+    fromElement: true,
+    height: '100vh',
+    width: 'auto',
+    storageManager: false,
+    panels: {
+      defaults: [
+        {
+          id: 'panel-devices',
+          buttons: [
+            {
+              id: 'device-desktop',
+              label: 'Desktop',
+              command: 'set-device-desktop',
+              active: true,
+              togglable: false,
+            },
+            {
+              id: 'device-mobile',
+              label: 'Mobile',
+              command: 'set-device-mobile',
+              togglable: false,
+            }
+          ],
+        },
+        {
+          id: 'panel-commands',
+          buttons: [
+            {
+              id: 'export',
+              className: 'btn-export',
+              label: 'Export',
+              command: 'export-template',
+            }
+          ]
+        }
+      ]
+    },
+    deviceManager: {
+      devices: [
+        { name: 'Desktop', width: '' },
+        { name: 'Mobile', width: '375px' }
+      ]
+    }
+  });
+
+  editor.Commands.add('set-device-desktop', {
+    run: editor => editor.setDevice('Desktop')
+  });
+
+  editor.Commands.add('set-device-mobile', {
+    run: editor => editor.setDevice('Mobile')
+  });
+</script>
+
 </body>
 </html>
