@@ -9,21 +9,24 @@
       font-family: sans-serif;
       margin: 0;
       padding: 0;
-      background: #e0e4e8; /* Darkened the background slightly */
+      background: #e0e4e8;
       color: #111;
     }
+
     .container {
       max-width: 600px;
       margin: 40px auto;
-      background: #f2f2f2; /* Light grey, darkened container background */
+      background: #ffffff; /* Changed to pure white */
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       font-size: 1.75rem;
       margin-bottom: 15px;
     }
+
     input[type="tel"] {
       width: 70%;
       padding: 10px;
@@ -32,6 +35,7 @@
       border-radius: 6px 0 0 6px;
       outline: none;
     }
+
     button {
       padding: 10px 20px;
       font-size: 1rem;
@@ -41,29 +45,44 @@
       border-radius: 0 6px 6px 0;
       cursor: pointer;
     }
+
     .section {
       margin-top: 30px;
+      background: #ffffff; /* Each section also white */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
-    .section h2 {
+
+    .section h2, .section h3 {
       font-size: 1.25rem;
       margin-bottom: 10px;
     }
+
     .section ul {
       padding-left: 20px;
     }
+
     a {
       color: #2563eb;
       text-decoration: none;
     }
+
     .trusted, .contact {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 20px;
     }
-    .trusted div, .contact div {
-      flex: 1;
+
+    .trusted > div, .contact > div {
+      flex: 1 1 45%;
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
+
     .footer {
       text-align: center;
       margin-top: 40px;
@@ -96,28 +115,4 @@
 
     <div class="section">
       <h2>Learn More About This Opportunity</h2>
-      <p>▶️ <a href="https://youtu.be/nN-Us-Q4SuQ" target="_blank">Watch 20-Minute Presentation</a></p>
-      <p>▶️ <a href="https://youtu.be/LhvplKxAWRI" target="_blank">6-Minute Overview</a></p>
-    </div>
-
-    <div class="section trusted">
-      <div>
-        <h3>Trusted Articles</h3>
-        <p>📄 <a href="https://www.cpajournal.com/2021/01/27/20-questions-about-the-establishing-a-health-wellness-program-in-the-workplace/" target="_blank">CPA Journal Article</a></p>
-        <p>📄 <a href="https://www.law.cornell.edu/cfr/text/26/1.105-11" target="_blank">Cornell Law Reference</a></p>
-      </div>
-      <div>
-        <h3>Prefer a Quick Call?</h3>
-        <a href="https://stefan-levy.projectbluefc.com/" target="_blank">
-          <button style="width: 100%; margin-top: 10px;">Schedule a Call with Stefan</button>
-        </a>
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>Contact Stefan Levy<br>
-      Chief Connections Officer | Reach Partners Group</p>
-    </div>
-  </div>
-</body>
-</html>
+      <p>▶️ <a href="https://youtu.be/nN-Us-Q4SuQ" target="_blank">Watch_
