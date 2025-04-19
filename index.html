@@ -1,154 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claim Your Federal Payroll Tax Refund</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .cta-button {
-            background-color: #28a745;
-            color: white;
-            padding: 15px 25px;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-            display: inline-block;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .cta-button:hover {
-            background-color: #218838;
-        }
-        .image-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .image-container img {
-            max-width: 300px;
-            border-radius: 50%;
-        }
-        .lead-form {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .lead-form input[type="text"], .lead-form input[type="tel"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .lead-form button {
-            background-color: #007bff;
-            color: white;
-            padding: 15px 25px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            border-radius: 5px;
-        }
-        .lead-form button:hover {
-            background-color: #0056b3;
-        }
-        .content-link {
-            text-decoration: none;
-            color: #007bff;
-        }
-        .content-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Claim Your Federal Payroll Tax Refund</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f7fb;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #004aad;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .cta {
+      background-color: #28a745;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+
+    .lead-form {
+      background: #eef5fc;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .lead-form input[type="text"],
+    .lead-form input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .lead-form button {
+      background: #007bff;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .lead-form button:hover {
+      background: #0056b3;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 200px;
+      border-radius: 50%;
+      border: 3px solid #007bff;
+    }
+
+    .icon {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .highlight-box {
+      background: #dff0d8;
+      border-left: 6px solid #28a745;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    .content-link {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .content-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>🚀 Claim Your Federal Payroll Tax Refund - Up to $500,000/Year!</h1>
+  <h1>🚀 Claim Your Federal Payroll Tax Refund – Up to $500,000/Year!</h1>
 </header>
 
 <section>
-    <h2>HVAC Business Owners, don’t leave money on the table.</h2>
-    <p>You could qualify for federal payroll tax refunds that could total up to $500,000 per year. This isn’t a loan or deferral – it’s real cash back, just for claiming the credits for your existing team.</p>
+  <h2>📢 HVAC Business Owners: Don’t Leave Money on the Table!</h2>
+  <p>
+    You could qualify for <strong>federal payroll tax refunds</strong> that total up to
+    <strong>$500,000 per year</strong>. This isn’t a loan or deferral – it’s real cash back
+    just for claiming the credits for your existing team.
+  </p>
 
-    <a href="https://tally.so/r/3y7Lp0" class="cta-button">📞 Claim Now!</a>
-
-    <h3>Why You Can’t Miss This</h3>
-    <ul>
-        <li>No upfront costs – Refunds are based on your existing payroll.</li>
-        <li>Big savings – Up to $500,000/year depending on the size of your team.</li>
-        <li>Simple process – No changes to your payroll system or business structure.</li>
-        <li>Act fast – If you don’t claim now, you could lose this money forever.</li>
-    </ul>
-
-    <h3>Why It Matters to Your HVAC Business</h3>
-    <p>The federal payroll tax credit program is a missed opportunity for many HVAC companies. But you can benefit from it. All you need to do is claim the credit, and we’ll walk you through it.</p>
-    <p>By completing the form below, you’re taking the first step towards securing hundreds of thousands of dollars in tax refunds that could directly help your business.</p>
-
-    <a href="https://tally.so/r/3y7Lp0" class="cta-button">📞 Claim Your Refund Now!</a>
-</section>
-
-<section>
-    <h3>📞 Meet Stefan Levy, Your Point of Contact</h3>
-    <div class="image-container">
-        <img src="https://github.com/venkat007462/federal-payroll-tax-credits/blob/main/Stefan-Levy.jpg?raw=true" alt="Stefan Levy">
-    </div>
-    <p>Stefan Levy<br>
-    Chief Connections Officer, Reach Partners Group<br>
-    📞 (310) 254-7592<br>
-    📧 <a href="mailto:stefan@reachpartnersgroup.com">stefan@reachpartnersgroup.com</a><br>
-    🔗 <a href="https://www.linkedin.com/in/stefanlevy" class="content-link">LinkedIn Profile</a></p>
-
-    <p>Stefan will personally help guide you through the process and make sure you get the credit you deserve. Don’t miss this opportunity to claim your refund!</p>
-</section>
-
-<section>
-    <h3>✅ Why Wait? Claim Now!</h3>
-    <p>You could be leaving up to $500,000 in federal payroll tax refunds on the table. Don’t wait! The time to act is now. Fill out the form, and one of our experts will call you back to discuss how much your business could get.</p>
-    <a href="https://tally.so/r/3y7Lp0" class="cta-button">📞 Final Call: Request your estimate Now!</a>
-</section>
-
-<section class="lead-form">
-    <h3>📞 Get Started with Your Claim</h3>
+  <div class="lead-form">
+    <h3>📞 Claim Your Refund Now</h3>
+    <p>Enter your name and phone number, and one of our specialists will call you back to discuss how much your business can get.</p>
     <form action="https://tally.so/r/3y7Lp0" method="GET">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        <button type="submit">Claim Your Refund Now</button>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" required />
+      <button type="submit">✅ Claim Now</button>
     </form>
+  </div>
+
+  <div class="highlight-box">
+    <h3>📈 Why You Can’t Miss This</h3>
+    <ul>
+      <li><img src="https://img.icons8.com/color/48/000000/no-hidden-fee.png" class="icon"/> No upfront costs – based on your existing payroll.</li>
+      <li><img src="https://img.icons8.com/color/48/000000/money.png" class="icon"/> Up to $500,000/year depending on team size.</li>
+      <li><img src="https://img.icons8.com/color/48/000000/settings.png" class="icon"/> No changes to your payroll system.</li>
+      <li><img src="https://img.icons8.com/color/48/000000/hourglass.png" class="icon"/> Act fast – or lose the money forever.</li>
+    </ul>
+  </div>
+
+  <h3>💡 Why It Matters for HVAC Companies</h3>
+  <p>Thousands of HVAC business owners miss out on this refund every year. But it’s your money – and claiming it is easy. We’ll guide you through the entire process.</p>
+
+  <p>You're just one form away from unlocking <strong>massive federal tax savings</strong>.</p>
+
+  <a href="#form" class="cta">📞 Start Your Claim Now</a>
 </section>
 
 <section>
-    <h3>💡 Learn More</h3>
-    <p>Read the full article on the federal payroll tax credit program and how HVAC businesses can benefit. Check out the links below:</p>
-    <ul>
-        <li><a href="https://example.com/article1" class="content-link">How the Federal Payroll Tax Credit Works</a></li>
-        <li><a href="https://example.com/article2" class="content-link">5 Ways HVAC Businesses Can Maximize Their Refunds</a></li>
-    </ul>
-    <p>Watch this short video to learn more:</p>
-    <a href="https://example.com/video" class="content-link">Watch Video</a>
+  <h2>📞 Meet Stefan Levy – Your Point of Contact</h2>
+  <div class="image-container">
+    <img src="https://github.com/venkat007462/federal-payroll-tax-credits/blob/main/Stefan-Levy.jpg?raw=true" alt="Stefan Levy" />
+  </div>
+  <p>
+    <strong>Stefan Levy</strong><br/>
+    Chief Connections Officer, Reach Partners Group<br/>
+    📞 (310) 254-7592<br/>
+    📧 <a href="mailto:stefan@reachpartnersgroup.com" class="content-link">stefan@reachpartnersgroup.com</a><br/>
+    🔗 <a href="https://www.linkedin.com/in/stefanlevy" class="content-link">LinkedIn Profile</a>
+  </p>
+  <p>Stefan will personally help guide you through the process and make sure you get the credit you deserve. Don’t miss this opportunity to claim your refund!</p>
+</section>
+
+<section>
+  <h2>🎥 Learn More</h2>
+  <p>Watch our quick video on how this works and read detailed guides:</p>
+  <ul>
+    <li><a href="https://example.com/video" class="content-link">▶️ Video: How Payroll Tax Credits Help HVAC Firms</a></li>
+    <li><a href="https://example.com/article1" class="content-link">📄 Article: Maximize Your HVAC Refund in 2025</a></li>
+    <li><a href="https://example.com/article2" class="content-link">📘 Full Guide: Federal Payroll Refunds Simplified</a></li>
+  </ul>
+</section>
+
+<section id="form">
+  <h2>📞 Final Call: Request Your Estimate Now</h2>
+  <p>You're almost there! Complete the form below and our team will contact you with how much your business could claim:</p>
+
+  <div class="lead-form">
+    <form action="https://tally.so/r/3y7Lp0" method="GET">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" required />
+      <button type="submit">🚀 Get My Free Estimate</button>
+    </form>
+  </div>
 </section>
 
 </body>
