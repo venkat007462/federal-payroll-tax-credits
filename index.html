@@ -1,45 +1,96 @@
-/* Body styling */
-body {
-    background-color: #f0f0f0; /* Light background color */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Standout Containers</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Container for all sections */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
+    /* Body styling */
+    body {
+      background: linear-gradient(to right, #dfe9f3, #ffffff); /* subtle gradient */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
 
-/* Section styling */
-.section {
-    background-color: #ffffff; /* White background for containers */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around each container */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 20px; /* Space between sections */
-    padding: 20px;
-    width: 80%; /* Container width */
-    max-width: 600px; /* Max width to avoid stretching */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
+    /* Container for all sections */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
 
-/* Section title */
-.section h2 {
-    color: #333; /* Dark text for headings */
-    margin-bottom: 10px;
-}
+    /* Section card styling */
+    .section {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      transition: all 0.3s ease;
+      border: 1px solid #e0e0e0;
+    }
 
-/* Section text */
-.section p {
-    color: #666; /* Lighter text for content */
-}
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      background-color: #fafafa;
+    }
 
-/* Hover effect to make the section stand out more */
-.section:hover {
-    background-color: #f7f7f7; /* Slightly darker background on hover */
-    transform: translateY(-5px); /* Lift the section up a bit */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
-}
+    /* Section content */
+    .section h2 {
+      color: #222222;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .section p {
+      color: #555555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      .section {
+        padding: 20px;
+      }
+
+      .section h2 {
+        font-size: 1.25rem;
+      }
+
+      .section p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h2>Section 1</h2>
+      <p>This is the content of section one. It has a white background, shadow, padding, and spacing to clearly separate it from the rest of the page.</p>
+    </div>
+
+    <div class="section">
+      <h2>Section 2</h2>
+      <p>This is the second section. Hover over it to see a subtle lift and shadow effect, making the UI feel more interactive and polished.</p>
+    </div>
+
+    <div class="section">
+      <h2>Section 3</h2>
+      <p>This third section uses consistent styling and spacing to maintain a clean, easy-to-read layout across all devices.</p>
+    </div>
+  </div>
+</body>
+</html>
